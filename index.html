@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Hello World</title>
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/template.css">
+	<link rel="stylesheet" href="css/default.css">
+	<link rel="apple-touch-icon" href="images/hello-icon-152.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="white"/>
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="apple-mobile-web-app-title" content="12EN APP">
+	<meta name="msapplication-TileImage" content="/images/hello-icon-144.png">
+	<meta name="msapplication-TileColor" content="#FFFFFF">
+	<!-- -->
+	<meta name="description" content="HELLO WORLD" />
+	<style>
+	body{
+		font-family: AgencyFB;
+	}
+	
+	.carousel-inner{
+		-webkit-touch-callout: none; 
+		-webkit-user-select: none; 
+		-khtml-user-select: none; 
+		-moz-user-select: none; 
+		-ms-user-select: none; 
+		user-select: none;
+	}
+	
+	.page_header{
+		background-color: #520700;
+		padding-bottom: 4px;
+		display: none;
+	}
+	
+	.page_header a{
+		font-size: 13px;
+	}
+	
+	.home_carousel{
+		border-bottom: solid gray 1px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	
+	.carousel-indicators li {
+		width: 12px;
+		height: 12px;
+		border-radius: 100%;
+		margin-left: 1%;
+		cursor: pointer;
+		background-color: tomato;
+		border: solid gray 1px;
+	}
+	.carousel-indicators {
+		bottom: -50px;
+	}
+	
+	
+	@media (max-width:768px){
+		
+		.page_header{
+			display: block;
+		}
+	}
+
+	@media (max-width: 560px) {
+	
+		.carousel-item:before{
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+		}
+		
+		
+		.carousel-caption_contents{
+			background-color:rgba(0,0,0,0.4);
+		}
+	
+	}
+	
+	@media (max-width: 280px) {
+		
+		.carousel-caption_contents{
+			display: none;
+		}
+	
+	}
+	
+	.flex-container {
+		display: flex;
+		display: -webkit-flex;
+		flex-direction: row;
+		-webkit-flex-direction: row;
+		-webkit-align-items: center;
+		align-items: center;
+		flex-wrap: wrap;
+		justify-content: center;
+		min-width: 320px;
+	}
+	
+	.flex-item {
+		display:flex;
+		align-items: center;
+		max-width: 310px;
+		min-width: 310px;
+		min-height: 230px;
+		max-height: 230px;
+		background-color: #f5f6f7;
+		border-radius: 3px;
+		border-top: solid skyblue 1px;
+		border-left: solid skyblue 1px;
+		border-bottom: solid gray 1px;
+		border-right: solid gray 1px;
+		margin: 5px;
+	}
+	
+	.flex-item a{
+		font-size: 13px;
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	.flex-item a.f-title{
+		font-size: 15px;
+	}
+	
+	.flex-item a.f-genre{
+		font-size: 12px;
+	}
+	
+	.flex-item img{
+		min-height: 185px;
+		max-height: 185px;
+		min-width: 110px;
+		max-width: 110px;
+		margin-left: 10px;
+		margin-bottom:8px;
+		border-radius:4px;
+		border: solid #FFD700 1px;
+	}
+	
+	.flex-item .item_desc{
+		min-height: 185px;
+		max-height: 185px;
+		min-width:180px;
+		max-width:180px;
+		padding-left: 10px;
+		word-wrap: break;
+		overflow: hidden;
+	}
+	
+	</style>
+	<script>
+		function topScroll(){
+			window.scrollTo({ top: 0, behavior: 'smooth' });
+		}
+	</script>
+</head>	
+<body>
+	
+	<div class="responsiveT3">
+		<div class="nav_bar">
+			<div>
+				<img class="navDP" src="images/_panda.jpg" class="img-fluid" style="border-radius:100%;height:60px;float:left;"></img>
+				<a class="font-weight-bold text-dark" style="cursor:default">&lt; HEADER &gt;</a>
+			</div>
+			<a class="mobile"><i class="fa fa-bars" style="color:black;"></i></a>
+		</div>
+		<div class="sideBar">
+			<div style="padding-left: 10%; padding-top:5%; padding-bottom:5%;">
+			
+				<img class="navDP" src="images/_panda.jpg" value="" class="img-fluid" style="border-radius:100%;height:40px;"></img>
+				&nbsp;
+				<a style="overflow:hidden;" class="m-title"><b>HELLO WORLD</b></a>
+			</div>
+			<ul class="list-unstyled">
+				<a href="index.html"><div class="m-navfont bg-tomato"><li><p>Home</p></li></div></a>
+				<a href="#"><div class="m-navfont"><li><p>Table of Contents</p></li></div></a>
+				
+				
+			</ul>
+		</div>
+		
+		<div class="sideBar2">
+			<ul class="list-unstyled">
+				<a href="index.html"><div class="pc-navfont bg-tomato"><li><p>Home</p></li></div></a>
+				<a href="#"><div class="pc-navfont"><li><p>Table of Contents</p></li></div></a>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="blackMask"></div>
+	
+	<!-- CONTENTS -->
+	<div class="system_body">
+		<!-- Header -->
+		<div class="page_header text-center">
+			<a class="font-weight-bold text-light">&lt; HEADER &gt;</a>
+		</div>
+		<!-- Carousel -->
+		<div class="home_carousel">
+			<div class="container my-4">
+				<!-- add data-ride="carousel" in multi-item-example for autoplay -->
+				<div id="multi-item-example" class="carousel slide carousel-multi-item">
+
+					<!-- CAROUSEL INDICATORS -->
+					<div class="carousel-indicators-wrapper">
+						<!-- INITIALIZE -->
+					</div>
+
+					<!-- SLIDES -->
+					<div class="carousel-inner" role="listbox" style="min-height:400px;">
+						<!-- FIRST SLIDE -->
+						<div class="carousel-item active">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card mb-2">
+										<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+										<div class="card-body">
+											<h4 class="card-title">TITLE 1</h4>
+											<p class="card-text">DESCRIPTION</p>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="col-md-4 clearfix d-none d-md-block">
+									<div class="card mb-2">
+										<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+										<div class="card-body">
+											<h4 class="card-title">TITLE 2</h4>
+											<p class="card-text">DESCRIPTION</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 clearfix d-none d-md-block">
+									<div class="card mb-2">
+										<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+										<div class="card-body">
+											<h4 class="card-title">TITLE 3</h4>
+											<p class="card-text">DESCRIPTION</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- SECOND SLIDE -->
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card mb-2">
+									<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+									<div class="card-body">
+									<h4 class="card-title">TITLE 4</h4>
+									<p class="card-text">DESCRIPTION</p>
+
+									</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 clearfix d-none d-md-block">
+									<div class="card mb-2">
+									<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+									<div class="card-body">
+									<h4 class="card-title">TITLE 5</h4>
+									<p class="card-text">DESCRIPTION</p>
+
+									</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 clearfix d-none d-md-block">
+									<div class="card mb-2">
+										<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+										<div class="card-body">
+											<h4 class="card-title">TITLE 6</h4>
+											<p class="card-text">DESCRIPTION</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- THIRD SLIDE -->
+						<div class="carousel-item">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="card mb-2">
+										<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+										<div class="card-body">
+											<h4 class="card-title">TITLE 7</h4>
+											<p class="card-text">DESCRIPTION</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-4 clearfix d-none d-md-block">
+									<div class="card mb-2">
+										<img class="card-img-top" src="images/_panda.jpg" alt="Image here">
+										<div class="card-body">
+											<h4 class="card-title">TITLE 8 </h4>
+											<p class="card-text">DESCRIPTION</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+	</div>
+
+	<p><br/></p>
+
+	<div class="text-center">
+		<a id="loadMore" class="btn btn-primary text-center text-light">Load More</a>
+	</div>
+	
+	<p><br/></p>
+	</div>
+		
+		<br/>
+		
+		<!-- Content (1) -->
+		
+		<div class="container">
+			<div class="row" style="">
+				<div class="col-12">
+					<center><span class="fa fa-bar-chart" style="color:gray;font-size:23px;float:left"></span></center>
+					 <a style="font-size:18px;margin-left:25px;">Content (1)</a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="content_1 flex-container"></div>
+		
+	</div>
+	
+	<div class="lineBreaks"></div>
+	
+	<span id="back_btn" onclick="topScroll()" class="back_btn fa fa-caret-square-o-up text-primary" style="position:fixed; bottom:7%; right:7%; font-size:80px;cursor: pointer;display:none; z-index: 3000;"></span>
+	
+	<div class="footer text-center" style="background-color: tomato; position: relative;bottom:0px;width:100%;padding:1%;padding-top:3%;">
+		<p style="font-size:20px;">&lt; Footer &gt; </p>
+	</div>
+  
+	<script src="js/jquery.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
+	<script src="carousel.js"></script>
+	<script>
+	$(document).ready(function(){
+	
+		// BACK BUTTON
+		var backbtn = document.getElementById('back_btn');
+		window.onscroll = function(e){
+			if ((window.innerHeight + window.pageYOffset) >= document.body.offsetHeight / 2) {
+				console.log('reached 50%');
+				backbtn.style.display = 'inline';
+			}else{
+				backbtn.style.display = 'none';
+			}
+		};
+	
+		// LINE BREAKS
+		function lineBreaks(i){
+			var html = '<p>';
+			for(var y = 1; y <= i; y++){
+				html = html + '<br/>';
+			}
+			html = html + '</p>';
+			$('.lineBreaks').html(html);
+		
+		}
+		
+		lineBreaks(200); // 34 def
+		
+		// CAROUSEL
+		var carousel_total_item = $('.carousel-inner .carousel-item').length;
+		var carousel_total_rows = $('.carousel-inner .row').length;
+		var carousel_total_img  = $('.carousel-inner .col-md-4').length;
+		
+		// INITIALIZE CAROUSEL INDICATOR
+		var html = '<ol class="carousel-indicators">';
+		
+		for(var i = 0; i < carousel_total_rows; i++){
+			if(i == 0){
+				html = html + '<li data-target="#multi-item-example" data-slide-to="0" class="active"></li>';
+			}else{
+				html = html + '<li data-target="#multi-item-example" data-slide-to="'+i+'"></li>';
+			}
+		}
+		html = html + '</ol>';
+		$('.carousel-indicators-wrapper').html(html);
+		
+		var rez_token = 1;
+		
+		if($(window).width() < 770){
+			// MOBILE
+			$('.col-md-4').unwrap();
+			$('.col-md-4').unwrap();
+			$('.col-md-4').wrap("<div class='carousel-item'><div class='row'></div></div>");
+			$('.col-md-4').removeClass('clearfix d-none d-md-block'); // REMOVE EACH HIDE
+			
+			// MOBILE INDICATOR
+			var carousel_total_item = $('.carousel-inner .carousel-item').length;
+			var html = '<ol class="carousel-indicators">';
+	
+			for(var i = 0; i < carousel_total_item; i++){
+				if(i == 0){
+					html = html + '\n<li data-target="#multi-item-example" data-slide-to="0" class="active"></li>';
+				}else{
+					html = html + '\n<li data-target="#multi-item-example" data-slide-to="'+i+'"></li>';
+				}
+			}
+			html = html + '</ol>';
+			$('.carousel-indicators-wrapper').html(html);
+			
+			// SHOW FIRST IMAGE
+			$('.carousel-inner').find('.carousel-item:first').addClass('active'); 
+			$('#multi-item-example').carousel(0);
+			
+			
+			rez_token = 0;
+		}else{
+			$('.carousel-indicators-wrapper').css('display','block');
+			rez_token = 1;
+		}
+		
+		
+		$(window).resize(function(){
+			if($(window).width() < 770){
+				// MOBILE
+				if(rez_token == 1){
+					// GET OLD CAROUSEL TOTAL ITEM
+					var old_carousel_total_item = parseInt($('.carousel-inner .carousel-item').length);
+					
+					// GET NEW TOTAL ITEM
+					var new_carousel_total_item = $('.carousel-inner .carousel-item').length;
+					var final_carousel_total_item = old_carousel_total_item - new_carousel_total_item - 1;
+					
+					// GET CURRENT INDICATOR POSITION
+					var current_indicator_pos = $('.carousel-indicators').find('.active').attr('data-slide-to');
+					
+					var current_slide_pos = current_indicator_pos;
+					current_slide_pos = 3 * current_slide_pos + 1;
+					//current_slide_pos = Math.ceil(current_slide_pos);
+					
+					
+					// made changes
+					$('.col-md-4').unwrap();
+					$('.col-md-4').unwrap();
+					$('.col-md-4').wrap("<div class='carousel-item'><div class='row'></div></div>");
+					$('.col-md-4').removeClass('clearfix d-none d-md-block'); // REMOVE EACH HIDE
+					
+					// MOBILE INDICATOR
+					var carousel_total_item = $('.carousel-inner .carousel-item').length;
+					var new_index_item = '';
+					
+					for(var i = old_carousel_total_item; i < carousel_total_item; i++){
+						new_index_item = new_index_item + '\n<li data-target="#multi-item-example" data-slide-to="'+String(i)+'" class="active">';
+					}
+					// ADD NEW ITEM
+					$('.carousel-indicators').append(new_index_item);
+					
+					// UPDATE IMAGE FOCUS, UPDATE INDICATOR
+					$('.carousel-inner').children().eq(current_slide_pos-1).addClass('active');
+					$('.carousel-indicators-wrapper').find('li').removeClass('active');
+					$('.carousel-indicators-wrapper').find('li[data-slide-to="'+String(current_slide_pos-1)+'"]').addClass('active');
+					
+					rez_token = 0;
+				}
+				
+			}else{
+				// PC
+				// DIVIDE THE COLUMNS BY 3, 
+				
+				if(rez_token == 0){
+					// GET THE OLD TOTAL ITEM
+					var old_carousel_total_item = parseInt($('.carousel-inner .carousel-item').length);
+				
+					// UNWRAP ALL
+					$('.col-md-4').unwrap();
+					$('.col-md-4').unwrap();
+					
+					// DIVIDE/WRAP BY 3
+					var col = $('.carousel-inner > .col-md-4');
+					for(var i = 0; i < col.length; i+=3){
+						col.slice(i, i+3).wrapAll("<div class='carousel-item'><div class='row'></div></div>");
+					}
+					
+					// GET NEW TOTAL ITEM
+					var new_carousel_total_item = $('.carousel-inner .carousel-item').length;
+					var final_carousel_total_item = old_carousel_total_item - new_carousel_total_item - 1;
+					
+					// GET CURRENT INDICATOR POSITION
+					var current_indicator_pos = $('.carousel-indicators').find('.active').attr('data-slide-to');
+					
+					var current_slide_pos = parseInt(current_indicator_pos) + 1;
+					current_slide_pos = current_slide_pos / 3;
+					current_slide_pos = Math.ceil(current_slide_pos);
+					
+					// REMOVE/ADD ROWS
+					$(".carousel-indicators-wrapper li" ).slice(new_carousel_total_item, old_carousel_total_item).remove();
+					
+					// UPDATE ITEMS
+					$('.carousel-inner').children().eq(current_slide_pos-1).addClass('active');;
+					
+					$('.carousel-indicators-wrapper').find('li').removeClass('active');
+					$('.carousel-indicators-wrapper').find('li[data-slide-to="'+String(current_slide_pos-1)+'"]').addClass('active');
+					
+					rez_token = 1;
+				}
+				//$('.carousel-indicators-wrapper').css('display','block');
+			}
+		});
+		
+		// LOAD MORE
+		$('body').on('click', '#loadMore', function(e){
+			var _this = $(this);
+			
+			$.ajax({
+					url: 'https://api.thecatapi.com/v1/images/search',
+					dataType: 'json',
+					beforeSend: function() {
+						_this.text('Loading...');
+					},
+					success: function(data) {
+						_this.text('Load More');
+						
+						var carousel_total_item = $('.carousel-inner .carousel-item').length;
+						var carousel_total_rows = $('.carousel-inner .row').length;
+						var carousel_total_img =  $('.carousel-inner .col-md-4').length;
+						
+						if($(window).width() < 770){
+							// MOBILE
+							// ADD IMAGE WITH NEW ROW
+								var html = 
+								'<div class="carousel-item">' +
+									'<div class="row">' +
+										'<div class="col-md-4">' +
+										'<div class="card mb-2">' +
+										'<img class="card-img-top" src="'+data[0].url+'" alt="Image here">' +
+										'<div class="card-body">' +
+										'<h4 class="card-title">NEW TITLE</h4>' +
+										'<p class="card-text">DESCRIPTION</p>' +
+										'</div>' +
+										'</div>' +
+										'</div>';
+									'</div>' +
+								'</div>';
+								
+								$('.carousel-inner').append(html);
+								
+							// ADD NEW ITEM TO INDICATOR
+							// UPDATE ITEMS 
+								var new_index = 1 + parseInt($('.carousel-indicators').children('li').last().attr('data-slide-to'));
+								
+								var new_index_item = '<li data-target="#multi-item-example" data-slide-to="'+new_index+'"></li>';
+								
+								$('.carousel-indicators').append(new_index_item);
+								
+								// MOVE TO NEW ITEM
+								$('#multi-item-example').carousel(new_index);
+						
+						}else{
+							// PC
+							
+							check_space = carousel_total_img % 3;
+							
+							// CHECK IF THERE'S VACANT SPACE IN THE ROW
+							if(check_space == 0){
+								// ADD NEW ROW
+								// UPDATE CAROUSEL IMAGES
+								var html = 
+								'<div class="carousel-item">' +
+									'<div class="row">' +
+										'<div class="col-md-4">' +
+										'<div class="card mb-2">' +
+										'<img class="card-img-top" src="'+data[0].url+'" alt="Image here">' +
+										'<div class="card-body">' +
+										'<h4 class="card-title">NEW TITLE</h4>' +
+										'<p class="card-text">DESCRIPTION</p>' +
+										'</div>' +
+										'</div>' +
+										'</div>';
+									'</div>' +
+								'</div>';
+								
+								$('.carousel-inner').append(html);
+								
+								// UPDATE ITEMS 
+								var new_index = 1 + parseInt($('.carousel-indicators').children('li').last().attr('data-slide-to'));
+								
+								var new_index_item = '<li data-target="#multi-item-example" data-slide-to="'+new_index+'"></li>';
+								
+								$('.carousel-indicators').append(new_index_item);
+								
+								// MOVE TO NEW ITEM
+								$('#multi-item-example').carousel(new_index);
+								
+							}else{
+								// ADD TO EXISTING ROW
+								var html =
+								'<div class="col-md-4">' +
+									'<div class="card mb-2">' +
+									'<img class="card-img-top" src="'+data[0].url+'" alt="Image here">' +
+									'<div class="card-body">' +
+									'<h4 class="card-title">NEW TITLE</h4>' +
+									'<p class="card-text">DESCRIPTION</p>' +
+									'</div>' +
+									'</div>' +
+								'</div>';
+								
+								$('.carousel-inner .row:last').append(html);
+								
+								// MOVE TO LAST ROW
+								var last_row = parseInt($('.carousel-indicators li:last').attr('data-slide-to'));
+								$('#multi-item-example').carousel(last_row);
+								
+							}
+							
+						}
+						// END OF STATEMENT
+				}
+			});
+		});
+		
+	});
+	</script>
+	
+	
+</body>
+
+</html>
